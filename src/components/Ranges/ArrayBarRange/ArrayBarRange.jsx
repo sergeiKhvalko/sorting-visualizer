@@ -34,10 +34,10 @@ const ArrayBarRange = ({ numberOfArrayBars, onChangeArrayBarRange }) => {
         min={2}
         max={14}
         step={1}
-        defaultValue={numberOfArrayBars}
+        value={numberOfArrayBars}
         valueLabelDisplay="auto"
         marks
-        onChangeCommitted={onChangeArrayBarRange}
+        onChange={onChangeArrayBarRange}
       />
     </>
   );

@@ -9,23 +9,23 @@ const Visualizer = () => {
   const [animationSpeed, setAnimationSpeed] = useState(50);
 
   useEffect(() => {
-    generateNewArray();
+    generateNewArray(numberOfArrayBars);
   }, []);
 
-  const generateNewArray = () => {
-    const array = [];
-    for (let i = 0; i < numberOfArrayBars; i++) {
-      array.push(randomIntFromInterval(5, 55));
+  const generateNewArray = (amount) => {
+    const newArray = [];
+    for (let i = 0; i < amount; i++) {
+      newArray.push(randomIntFromInterval(5, 55));
     }
-    setArrayBar(array);
+    setArrayBar(newArray);
   };
 
-  const onChangeArrayBarRange = (value) => {
+  const onChangeArrayBarRange = (event, value) => {
     setNumberOfArrayBars(value);
-    generateNewArray();
+    generateNewArray(value);
   };
 
-  const onChangeAnimationSpeed = (value) => {
+  const onChangeAnimationSpeed = (event, value) => {
     setAnimationSpeed(value);
   };
 

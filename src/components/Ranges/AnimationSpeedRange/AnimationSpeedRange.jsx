@@ -34,9 +34,9 @@ const AnimationSpeedRange = ({ animationSpeed, onChangeAnimationSpeed }) => {
         id="animationSpeedSlider"
         min={10}
         max={200}
-        defaultValue={animationSpeed}
+        value={animationSpeed}
         valueLabelDisplay="auto"
-        onChangeCommitted={onChangeAnimationSpeed}
+        onChange={onChangeAnimationSpeed}
       />
     </>
   );

@@ -1,9 +1,9 @@
 import "./ArrayBar.css";
 
-const ColorBar = ({ height }) => {
+const ColorBar = ({ height, className }) => {
   return (
     <div
-      className="color-bar"
+      className={className}
       style={{
         height: `${height}vh`,
         transform: `translateY(${55 - height}vh)`,
@@ -20,16 +20,16 @@ export const ArrayBar = ({ arrayBar }) => {
           <div className="side top"></div>
           <div className="side bottom"></div>
           <div className="side right">
-            <ColorBar height={value} />
+            <ColorBar className={"color-bar right-color-bar"} height={value} />
           </div>
           <div className="side left">
-            <ColorBar height={value} />
+            <ColorBar className={"color-bar left-color-bar"} height={value} />
           </div>
           <div className="side front">
-            <ColorBar height={value} />
+            <ColorBar className={"color-bar front-color-bar"} height={value} />
           </div>
           <div className="side back">
-            <ColorBar height={value} />
+            <ColorBar className={"color-bar back-color-bar"} height={value} />
           </div>
         </div>
       ))}

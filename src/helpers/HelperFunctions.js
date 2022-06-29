@@ -47,7 +47,7 @@ export function swapBars(index1, index2) {
 export function resetBarStyleDefault(array, animationSpeed) {
   setTimeout(() => {
     for (let j = 0; j < array.length; j++) {
-      changeBackgroundColor(j, "rgba(225, 0, 120, 0.5)");
+      changeBackgroundColor(j, "rgba(225, 0, 120, 0.5)"); //pink
       changeBoxShadow(j, "5px 5px 50px 5px rgba(225, 0, 120, 0.2)");
     }
   }, animationSpeed);

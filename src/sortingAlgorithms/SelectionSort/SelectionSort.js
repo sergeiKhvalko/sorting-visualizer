@@ -24,13 +24,13 @@ const SelectionSort = (array, animationSpeed) => {
 
     const promise1 = new Promise((resolve, reject) => {
       setTimeout(() => {
-        changeBackgroundColor(minIndexElement, "rgba(0,0,255, 0.9)");
-        changeBackgroundColor(comparingElement1, "rgba(0,0,0, 0.9)");
-        changeBackgroundColor(comparingElement2, "rgba(255,165,0, 0.9)");
+        changeBackgroundColor(minIndexElement, "rgba(0,0,255, 0.9)"); //blue
+        changeBackgroundColor(comparingElement1, "rgba(0,0,0, 0.9)"); //black
+        changeBackgroundColor(comparingElement2, "rgba(255,165,0, 0.9)"); //yellow
 
         if (doSwap === true) {
-          changeBackgroundColor(minIndexElement, "rgba(144,238,144, 0.9)");
-          changeBackgroundColor(comparingElement1, "rgba(144,238,144, 0.9)");
+          changeBackgroundColor(minIndexElement, "rgba(144,238,144, 0.9)"); //green-light
+          changeBackgroundColor(comparingElement1, "rgba(144,238,144, 0.9)"); //green-light
 
           swapBars(comparingElement1, minIndexElement);
         }
@@ -42,14 +42,14 @@ const SelectionSort = (array, animationSpeed) => {
     const promise2 = new Promise((resolve, reject) => {
       setTimeout(() => {
         if (isFinalElement === true) {
-          changeBackgroundColor(finalElement, "rgba(0, 164, 86, 0.6)");
+          changeBackgroundColor(finalElement, "rgba(0, 164, 86, 0.6)"); // green
           changeBoxShadow(
             finalElement,
             "5px 5px 50px 5px rgba(0, 164, 86, 0.2)"
           );
         } else {
-          changeBackgroundColor(comparingElement2, "rgba(225, 0, 120, 0.6)");
-          changeBackgroundColor(minIndexElement, "rgba(225, 0, 120, 0.6)");
+          changeBackgroundColor(comparingElement2, "rgba(225, 0, 120, 0.6)"); //pink
+          changeBackgroundColor(minIndexElement, "rgba(225, 0, 120, 0.6)"); //pink
         }
 
         if (finalElement === array.length - 1) resolve();

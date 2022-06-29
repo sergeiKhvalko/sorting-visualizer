@@ -17,7 +17,7 @@ const Visualizer = () => {
   const generateNewArray = (amount = numberOfArrayBars) => {
     const newArray = [];
     for (let i = 0; i < amount; i++) {
-      newArray.push(randomIntFromInterval(5, 55));
+      newArray.push(randomIntFromInterval(3, 55));
     }
     setArrayBar(newArray);
   };

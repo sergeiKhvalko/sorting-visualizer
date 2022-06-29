@@ -26,12 +26,6 @@
   }
 }
 
-@media only screen and (max-width: 320px) {
-  #animateText {
-    font-size: medium;
-  }
-}
-
 @keyframes animate {
   0% {
     background-position: -500%;

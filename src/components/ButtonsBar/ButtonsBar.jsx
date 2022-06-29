@@ -1,5 +1,5 @@
-import { Button } from "../Button/Button";
-import styles from "./ButtonsBar.module.css";
+import { Button } from "./Button/Button";
+import "./ButtonsBar.css";
 
 export const ButtonsBar = ({
   generateNewArray,
@@ -9,7 +9,7 @@ export const ButtonsBar = ({
   quickSort,
 }) => {
   return (
-    <div className={styles.buttonsBar}>
+    <div className="buttons-bar">
       <Button
         id="reset"
         appearance="array-btn"
